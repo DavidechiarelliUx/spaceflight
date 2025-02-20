@@ -28,7 +28,7 @@ const ArticleDetails =() => {
         <Card>
           <Card.Img variant="top" src={article?.image_url} alt={article?.title} />
           <Card.Body>
-            <Card.Title>{article?.title}</Card.Title>
+            <Card.Title>{article?.title} - {article?.news_site}</Card.Title>
             <Card.Text>{article?.summary}</Card.Text>
             {article?.published_at ? new Date(article.published_at).toLocaleDateString() : "Data non disponibile"}
           </Card.Body>

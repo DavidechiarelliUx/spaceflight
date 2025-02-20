@@ -4,4 +4,5 @@ export interface IArticle {
   image_url: string;
   summary: string;
   published_at: string;
+  news_site?:string;
 }
